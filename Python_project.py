@@ -8,7 +8,7 @@ import altair as alt
 # --- Page Configuration (App Title & Icon) ---
 # THIS MUST BE THE FIRST STREAMLIT COMMAND
 st.set_page_config(
-    page_title="Music Data Explorer (2000-2020)",
+    page_title="Music Data Explorer (2000-2020) By Irfan",
     page_icon="🎵",
     layout="wide"
 )
@@ -61,7 +61,7 @@ page = st.sidebar.selectbox(
 
 # --- Main App Title ---
 # (I used your original title here)
-st.title("Python Project by Irfan:🎵Songs Analysis From 2000 To 2020")
+st.title("🎵Songs Analysis From 2000 To 2020")
 st.write(f"Currently viewing: **{page}**")
 st.markdown("---")
 
@@ -237,4 +237,6 @@ elif page == "Interactive Song Explorer":
     
     display_cols = ['Title', 'Artist', 'Genre', 'release_year', 'Popularity', 'Duration']
     st.dataframe(filtered_df[display_cols], use_container_width=True)
-    st.title(" Enjoy Exploring the Music Data!🎵, Its fun right?! Thanks for Wasting your valuable time in here")
+
+    st.title(" Enjoy Exploring the Music Data!🎵, Its fun right?! Thanks for your valuable time in here")
+    
